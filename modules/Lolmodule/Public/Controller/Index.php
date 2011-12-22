@@ -17,9 +17,7 @@
  */
 class LolmodulePublicControllerIndex extends LolmodulePublicController {
 	/**
-	 * Hello world admin action
-	 *
-	 * @return void
+	 * Hello world public action
 	 */
 	public function indexAction() {
 		$this->doOutputDisabled();
