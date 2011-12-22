@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteBase /
+
+# Direct all requests to web/
+RewriteRule ^(.*)$ web/ [QSA,L]
+
