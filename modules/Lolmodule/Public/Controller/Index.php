@@ -20,7 +20,8 @@ class LolmodulePublicControllerIndex extends LolmodulePublicController {
 	 * Hello world public action
 	 */
 	public function indexAction() {
-		$this->doOutputDisabled();
-		echo 'Hello OS public world!';
+		$this->doOutputPhp();
+
+		$this->assign('target', 'world');
 	}
 }
