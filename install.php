@@ -13,8 +13,8 @@ $libs = array(
 		'ver' => 'origin/master'
 	),
 	array(
-		'lib' => 'twig',
-		'url' => 'http://github.com/fabpot/Twig.git',
+		'lib' => 'froodTwig',
+		'url' => 'http://github.com/akimsko/froodTwig.git',
 		'ver' => 'origin/master'
 	),
 );
@@ -31,4 +31,8 @@ foreach ($libs as $lib) {
 	echo " > Fetching {$lib['lib']}, version {$lib['ver']}\n";
 
 	system('cd ' . escapeshellarg($installPath) . ' && git fetch origin && git reset --hard ' . escapeshellarg($lib['ver']));
+	
+	if (file_exists($libInstall = $libPath . "/{$lib['lib']}/install.php")) {
+		system("php $libInstall");
+	}
 }
