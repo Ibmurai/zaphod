@@ -1,7 +1,8 @@
-RewriteEngine on
+<IfModule mod_rewrite.c>
+    RewriteEngine on
 
-RewriteBase /
+    RewriteBase /
 
-# Direct all requests to web/
-RewriteRule ^(.*)$ web/ [QSA,L]
-
+    # Direct all requests to web/
+    RewriteRule ^(.*)$ web/ [QSA,L]
+</IfModule>

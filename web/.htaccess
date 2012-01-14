@@ -1,10 +1,12 @@
-RewriteEngine on
+<IfModule mod_rewrite.c>
+    RewriteEngine on
 
-# !!! You need to change this to the correct module name.
-RewriteBase /web
+    # !!! You need to change this to the correct module name.
+    RewriteBase /web
 
-# This rule excludes real files from the rewriting and lets them pass through unaffected.
-RewriteCond %{REQUEST_FILENAME} !-f
+    # This rule excludes real files from the rewriting and lets them pass through unaffected.
+    RewriteCond %{REQUEST_FILENAME} !-f
 
-# Direct all requests to run.php, except specified file types.
-RewriteRule !\.(js|ico|txt|gif|jpg|png|css)$ run.php [QSA,L]
+    # Direct all requests to run.php, except specified file types.
+    RewriteRule !\.(js|ico|txt|gif|jpg|png|css)$ run.php [QSA,L]
+</IfModule>
