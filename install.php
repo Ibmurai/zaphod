@@ -33,6 +33,6 @@ foreach ($libs as $lib) {
 	system('cd ' . escapeshellarg($installPath) . ' && git fetch origin && git reset --hard ' . escapeshellarg($lib['ver']));
 	
 	if (file_exists($libInstall = $libPath . "/{$lib['lib']}/install.php")) {
-		system("php $libInstall");
+		system('php ' . escapeshellarg($libInstall));
 	}
 }
