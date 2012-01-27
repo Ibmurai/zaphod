@@ -1,7 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
 
-    # !!! You need to change this to the correct module name.
     RewriteBase /web
 
     # This rule excludes real files from the rewriting and lets them pass through unaffected.
