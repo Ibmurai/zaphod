@@ -1,24 +1,19 @@
 <?php
 /**
- * LolmodulePublicControllerIndex
- * 
- * PHP version 5
- * 
- * @category Frood
- * @package  lolmodule
- * @author   Bo Thinggaard <both@fynskemedier.dk>
- * @author   Jens Riisom Schultz <jers@fynskemedier.dk>
- * @since    16-12-2011
+ * This file is part of the Zaphod distribution.
+ * @link https://github.com/Ibmurai/zaphod
+ *
+ * @copyright Copyright 2011 Jens Riisom Schultz
+ * @license   http://www.apache.org/licenses/LICENSE-2.0
  */
-
 /**
- * LolmodulePublicControllerIndex
- * 
- * @category   Frood
- * @package    lolmodule
+ * LolmodulePublicController - The public base controller.
+ *
+ * @category   Lolmodule
+ * @package    Public
  * @subpackage Controller
- * @author     Bo Thinggaard <both@fynskemedier.dk>
- * @author     Jens Riisom Schultz <jers@fynskemedier.dk>
+ * @author     Jens Riisom Schultz <ibber_of_crew42@hotmail.com>
+ * @author     Bo Thinggaard <akimsko@tnactas.dk>
  */
 class LolmodulePublicController extends FroodController {
 }

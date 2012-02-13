@@ -18,10 +18,12 @@
 class LolmodulePublicControllerIndex extends LolmodulePublicController {
 	/**
 	 * Hello world public action
+	 *
+	 * @param string $name <world>
 	 */
-	public function indexAction() {
+	public function indexAction($name) {
 		$this->doOutputPhp();
 
-		$this->assign('target', 'world');
+		$this->assign('target', $name);
 	}
 }

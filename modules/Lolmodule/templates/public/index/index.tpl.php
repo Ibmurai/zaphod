@@ -5,7 +5,7 @@
 	<title>Hello, someone or something</title>
 </head>
 <body>
-	<article>
+	<article role=main>
 		<header>
 			<h1>Hello, <?php echo $this->target ?>!</h1>
 		</header>

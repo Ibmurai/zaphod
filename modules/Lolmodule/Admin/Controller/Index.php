@@ -8,9 +8,9 @@
  */
 /**
  * LolmoduleAdminControllerIndex
- * 
- * @category   Frood
- * @package    lolmodule
+ *
+ * @category   Lolmodule
+ * @package    Admin
  * @subpackage Controller
  * @author     Jens Riisom Schultz <ibber_of_crew42@hotmail.com>
  * @author     Bo Thinggaard <akimsko@tnactas.dk>
