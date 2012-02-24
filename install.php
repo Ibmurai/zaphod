@@ -1,5 +1,12 @@
 #!/usr/bin/php
 <?php
+/**
+ * This file is part of The Zaphod distribution.
+ * @link https://github.com/Ibmurai/zaphod
+ *
+ * @copyright Copyright 2011 Jens Riisom Schultz
+ * @license   http://www.apache.org/licenses/LICENSE-2.0
+ */
 set_time_limit(0);
 
 if (!is_dir($libPath = dirname(__FILE__) . '/lib')) {

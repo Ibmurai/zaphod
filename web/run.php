@@ -11,6 +11,5 @@
  * @author   Jens Riisom Schultz <ibber_of_crew42@hotmail.com>
  * @author   Bo Thinggaard <akimsko@tnactas.dk>
  */
-require_once dirname(__FILE__) . '/../lib/frood/src/Frood.php';
-$frood = new Frood();
-$frood->dispatch();
+require_once dirname(__FILE__) . '/../lib/zaphod/src/Zaphod.php';
+Zaphod::run();
