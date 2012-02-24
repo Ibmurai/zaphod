@@ -19,7 +19,13 @@ Documentation
 
 Coming soon... ;)
 
-  * See INSTALL.md for installation instructions.
+
+Installing
+----------
+
+  * Clone zaphod from git.
+  * Run `install.php` from command line.
+  * Prosper.
 
 
 License
