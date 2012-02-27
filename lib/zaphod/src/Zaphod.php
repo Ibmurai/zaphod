@@ -26,7 +26,18 @@ abstract class Zaphod {
 
 		self::$_librariesAutoloader = self::_registerLibraries();
 
+		self::_setThemePathForTwigRenderer();
+
 		$frood->dispatch();
+	}
+
+	/**
+	 * Get the root path of this Zaphod installation.
+	 *
+	 * @return string
+	 */
+	public static function getRootPath() {
+		return realpath(dirname(__FILE__) . '/../../..') . '/';
 	}
 
 	/**
@@ -46,5 +57,16 @@ abstract class Zaphod {
 		}
 
 		return new FroodAutoloader($libraries);
+	}
+
+	/**
+	 * Set the theme path for the twig renderer, if available.
+	 */
+	private static function _setThemePathForTwigRenderer() {
+		$themePath = realpath(self::getRootPath() . 'theme');
+
+		if (class_exists('FroodRendererTwig') && $themePath) {
+			FroodRendererTwig::setThemePath($themePath);
+		}
 	}
 }
