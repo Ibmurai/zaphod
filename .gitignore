@@ -1,2 +1,4 @@
 lib/*
 !lib/zaphod
+modules/*
+!modules/Lolmodule
