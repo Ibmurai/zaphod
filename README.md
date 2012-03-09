@@ -25,7 +25,7 @@ Installing
 
   * Clone zaphod from git.
   * Run `install.php` from command line.
-  * Prosper.
+  * If you have PHP 5.4 and are on a *nix box, run `serve.sh` from a shell - this will start the built in webserver on port 8000 of localhost. See it work by going to [`http://localhost:8000/lolmodule`](http://localhost:8000/lolmodule).
 
 
 License
