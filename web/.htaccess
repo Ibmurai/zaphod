@@ -7,5 +7,5 @@
     RewriteCond %{REQUEST_FILENAME} !-f
 
     # Direct all requests to run.php, except specified file types.
-    RewriteRule !\.(js|ico|txt|gif|jpg|png|css)$ run.php [QSA,L]
+    RewriteRule ^ run.php [QSA,L]
 </IfModule>

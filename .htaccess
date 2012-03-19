@@ -4,5 +4,5 @@
     RewriteBase /
 
     # Direct all requests to web/
-    RewriteRule ^(.*)$ web/ [QSA,L]
+    RewriteRule ^(.*)$ web/$1 [QSA,L]
 </IfModule>
