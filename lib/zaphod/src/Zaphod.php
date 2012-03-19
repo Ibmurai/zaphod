@@ -18,11 +18,13 @@ abstract class Zaphod {
 
 	/**
 	 * Registers modules, sets up The Frood and dispatches.
+	 *
+	 * @param FroodConfiguration $configuration An optional Frood configuration.
 	 */
-	public static function run() {
+	public static function run(FroodConfiguration $configuration = null) {
 		require_once dirname(__FILE__) . '/../../frood/src/Frood.php';
 
-		$frood = new Frood();
+		$frood = new Frood($configuration);
 
 		self::$_librariesAutoloader = self::_registerLibraries();
 
