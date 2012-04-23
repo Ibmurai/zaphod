@@ -17,12 +17,12 @@ $libs = array(
 	array(
 		'lib' => 'frood',
 		'url' => 'http://github.com/Ibmurai/frood.git',
-		'ver' => 'origin/master'
+		'ver' => 'v.1.0'
 	),
 	array(
 		'lib' => 'froodTwig',
 		'url' => 'http://github.com/akimsko/froodTwig.git',
-		'ver' => 'origin/master'
+		'ver' => 'v.1.0'
 	),
 );
 
