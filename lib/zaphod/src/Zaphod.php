@@ -6,6 +6,8 @@
  * @copyright Copyright 2011 Jens Riisom Schultz
  * @license   http://www.apache.org/licenses/LICENSE-2.0
  */
+require_once dirname(__FILE__) . '/../../frood/src/Frood.php';
+require_once dirname(__FILE__) . '/ZaphodConfiguration.php';
 /**
  * Handy static functionality to make stuff work.
  *
@@ -22,7 +24,9 @@ abstract class Zaphod {
 	 * @param FroodConfiguration $configuration An optional Frood configuration.
 	 */
 	public static function run(FroodConfiguration $configuration = null) {
-		require_once dirname(__FILE__) . '/../../frood/src/Frood.php';
+		if ($configuration === null) {
+			$configuration = new ZaphodConfiguration();
+		}
 
 		$frood = new Frood($configuration);
 
