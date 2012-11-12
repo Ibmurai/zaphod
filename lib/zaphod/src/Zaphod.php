@@ -52,10 +52,10 @@ abstract class Zaphod {
 	 * @return FroodAutoloader The registered Frood Autoloader to autoload libraries.
 	 */
 	private static function _registerLibraries() {
-		$libraries = array('zaphod');
+		$libraries = array();
 		$dirterator = new DirectoryIterator(dirname(__FILE__) . '/../../');
 		foreach ($dirterator as $item) {
-			if ($item->isDir() && !$item->isDot() && !(in_array($item->getFilename(), array('frood', 'zaphod')))) {
+			if ($item->isDir() && !$item->isDot() && !(in_array($item->getFilename(), array('frood')))) {
 				if (($libraryIncludePath = realpath($item->getPathname() . '/src')) !== FALSE) {
 					$libraries[] = $libraryIncludePath;
 				}
