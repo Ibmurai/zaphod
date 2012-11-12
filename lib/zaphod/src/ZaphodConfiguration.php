@@ -1,12 +1,16 @@
 <?php
-
-/*
- * This file is part of the grind project.
+/**
+ * This file is part of the Zaphod distribution.
+ * @link https://github.com/Ibmurai/zaphod
+ *
+ * @copyright Copyright 2011 Jens Riisom Schultz
+ * @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
 /**
- * ZaphodConfiguration
+ * Zaphod frood configuration.
  *
+ * @category Zaphod
  * @author Bo Thinggaard <bo@unpossiblesystemes.dk>
  */
 class ZaphodConfiguration extends FroodConfiguration {
