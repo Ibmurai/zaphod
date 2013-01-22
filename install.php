@@ -17,7 +17,7 @@ $libs = array(
 	array(
 		'lib' => 'frood',
 		'url' => 'http://github.com/Ibmurai/frood.git',
-		'ver' => 'v.1.1'
+		'ver' => 'v.1.11'
 	),
 	array(
 		'lib' => 'froodTwig',
