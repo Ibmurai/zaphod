@@ -34,7 +34,11 @@ abstract class Zaphod {
 
 		self::_setThemePathForTwigRenderer();
 
-		$frood->dispatch();
+		try {
+			$frood->dispatch();
+		} catch (FroodHttpException $e) {
+			$e->createResponse()->send();
+		}
 	}
 
 	/**
