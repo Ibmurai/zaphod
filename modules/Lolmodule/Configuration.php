@@ -24,4 +24,14 @@ class LolmoduleConfiguration extends FroodModuleConfiguration {
 	public function useNamespaces() {
 		return false;
 	}
+
+	/**
+	 * Get the module router for the configured module.
+	 *
+	 * @return FroodModuleRouterApi
+	 */
+	public function getRouter() {
+		static $router;
+		return $router ? $router : ($router = new FroodModuleRouterApi($this->getModule()));
+	}
 }
